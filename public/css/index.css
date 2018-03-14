@@ -484,6 +484,7 @@ footer .footer-nav{
         float: left !important;
         color: yellow !important;
     }
+
     .banner{
         height: auto !important;
         padding: 20px;
@@ -502,18 +503,17 @@ footer .footer-nav{
         text-align: center;
     }
     .footer-logo-parent{
-        display: block;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-    .footer-nav{
-        display: block;
-        flex: none;
-    }
-    .footer-nav .nav-item{
-        display: inline;
-        float: left;
         padding: 0;
+        margin: 0;
+    }
+    .footer-logo-parent .footer-nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .hidden-terms{
+        text-align: center !important;
+        color: #000;
     }
 
 }

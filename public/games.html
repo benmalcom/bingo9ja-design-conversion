@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="lib/bootstrap-select/dist/css/bootstrap-select.min.css" media="screen">
+    <link rel="stylesheet" href="css/games.css" media="screen">
+    <title>Games</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar sidebar-offcanvas p-0 m-0">
+            <!--<button type="button" class="m-1 d-block d-sm-none menu-close" data-toggle="offcanvas">
+                <i class="fa fa-times"></i>
+            </button>-->
+            <div class="logo-area center-content">
+                <div>
+                    <img src="img/bingo-dashboard-logo.png">
+                </div>
+            </div>
+            <div class="profile-area shadow m-0 center-content">
+                <div class="row">
+                    <div class="col-md-4 col-4">
+                        <img src="img/user%20avatar.png" class="pp-border circle circle-xs">
+                    </div>
+                    <div class="col-md-8 col-8">
+                        <div class="text-left">
+                            <h6 class="text-sm mt-10 user-name text-white">Benjamin Ikeji</h6>
+                            <h6 class="text-sm text-muted"><a href="#" class="view-profile">VIEW PROFILE</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-links-area">
+                <ul class="mt-15 p-0">
+                    <li><a href="dashboard.html"><img src="img/icons/svg/dashboard.svg" class="sidebar-icon mr-3"> Dashboard</a></li>
+                    <li><a href="players.html"><img src="img/icons/svg/players.svg" class="sidebar-icon mr-3"> Players</a></li>
+                    <li class="active"><a href="games.html"><img src="img/icons/svg/slot-machine.svg" class="sidebar-icon mr-3"> Games</a></li>
+                    <li><a href="reports.html"><img src="img/icons/svg/newspaper.svg" class="sidebar-icon mr-3"> Reports</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 p-0 content-parent">
+            <nav class="navbar shadow dashboard-navbar">
+                <a class="navbar-brand d-none d-sm-block text-white ml-20" href="#">
+                    Games
+                </a>
+
+                <!--                <button class="navbar-toggler text-black" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="fa fa-bars"></span>
+                                </button>-->
+
+                <div class="btn-group dropdown align-items-center justify-content-between">
+                    <a class="d-inline d-sm-none hamburger-menu home-menu" data-toggle="offcanvas">
+                        <span class="fa fa-bars menu-icon"></span>
+                    </a>
+                </div>
+                <a>
+                    <img src="images/user%20avatar.png" class="circle circle-xs pp-border shadow d-block d-sm-none">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                </div>
+            </nav>
+            <div class="content p-20 pl-50 pr-50">
+                <div class="row winning-info full-height">
+                    <div class="col-md-3 full-height winning-info-sidebar p-0">
+                        <div class="wis wis-default center-content">
+                            <div class="text-center">
+                                <h6 class="text-white mt-4 mb-1">Add Winning<br/>
+                                    Draw Numbers</h6>
+                                <p>ACTIVE DRAWS</p>
+                            </div>
+                        </div>
+                        <div class="wis active wis-info center-content">
+                            <div class="widget row br-5">
+                                <div class="col-md-8 widget-left full-height bg-white center-content p-0">
+                                    <div class="text-black text-center mt-2">
+                                        <h6 class="tiny-text mb-0">MEGA BINGO - 03 MARCH 2018</h6>
+                                        <h4 class="figure-text playfair">0h : 0m : 0s</h4>
+                                        <h6 class="tiny-text">7PM | ID: 001A23</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 widget-right full-height center-content p-0">
+                                    <div class="text-white text-center">
+                                        <h6 class="tiny-text">JACKPOT</h6>
+                                        <h4 class="figure-text playfair">500k</h4>
+                                        <h6 class="tiny-text">TODAY'S WIN</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wis wis-danger center-content">
+                            <div class="widget row br-5">
+                                <div class="col-md-8 widget-left full-height bg-white center-content p-0">
+                                    <div class="text-black text-center mt-2">
+                                        <h6 class="tiny-text mb-0">BINGO - 03 MARCH 2018</h6>
+                                        <h4 class="figure-text playfair">0h : 0m : 0s</h4>
+                                        <h6 class="tiny-text">7PM | ID: 001A23</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 widget-right full-height center-content p-0">
+                                    <div class="text-white text-center">
+                                        <h6 class="tiny-text mb-1">PLAY N100</h6>
+                                        <h6 class="tiny-text mb-0">AND WIN</h6>
+                                        <h4 class="figure-text playfair">20k</h4>
+                                        <h6 class="tiny-text">TODAY'S WIN</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wis wis-warning center-content">
+                            <div class="widget row br-5">
+                                <div class="col-md-8 widget-left full-height bg-white center-content p-0">
+                                    <div class="text-black text-center mt-2">
+                                        <h6 class="tiny-text mb-0">PICK 3 - 03 MARCH 2018</h6>
+                                        <h4 class="figure-text playfair">0h : 0m : 0s</h4>
+                                        <h6 class="tiny-text">7PM | ID: 001A23</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 widget-right full-height center-content p-0">
+                                    <div class="text-white text-center">
+                                        <h6 class="tiny-text mb-1">PLAY N100</h6>
+                                        <h6 class="tiny-text mb-0">AND WIN</h6>
+                                        <h4 class="figure-text playfair">15k</h4>
+                                        <h6 class="tiny-text">TODAY'S WIN</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wis wis-success center-content">
+                            <div class="widget row br-5">
+                                <div class="col-md-8 widget-left full-height bg-white center-content p-0">
+                                    <div class="text-black text-center mt-2">
+                                        <h6 class="tiny-text mb-0">PICK 4 - 03 MARCH 2018</h6>
+                                        <h4 class="figure-text playfair">0h : 0m : 0s</h4>
+                                        <h6 class="tiny-text">7PM | ID: 001A23</h6>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 widget-right full-height center-content p-0">
+                                    <div class="text-white text-center">
+                                        <h6 class="tiny-text mb-1">PLAY N100</h6>
+                                        <h6 class="tiny-text mb-0">AND WIN</h6>
+                                        <h4 class="figure-text playfair">30k</h4>
+                                        <h6 class="tiny-text">TODAY'S WIN</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 full-height p-30 text-white">
+                        <h6>MEGA Bingo - Add Winning Numbers</h6>
+                        <hr class="white-hr">
+                        <div class="pt-10 pb-10">
+                            <form>
+                                <input type="text" class="custom-table-input" placeholder="0">
+                                <input type="text" class="custom-table-input" placeholder="0">
+                                <input type="text" class="custom-table-input" placeholder="0">
+                                <input type="text" class="custom-table-input" placeholder="0">
+                                <input type="text" class="custom-table-input" placeholder="0">
+                                <input type="text" class="custom-table-input" placeholder="0">
+                                <button type="submit" class="btn btn-success text-xxs p-10 pl-20 pr-20 text-white">SUBMIT</button>
+                            </form>
+                        </div>
+                        <hr class="white-hr">
+                        <h6 class="mt-30">Winners</h6>
+                        <div class="table-container">
+                            <div class="table-responsive">
+                                <table class="table table-borderless table-winners">
+                                    <thead>
+                                    <tr>
+                                        <th>USERNAME</th>
+                                        <th>PHONE NUMBER</th>
+                                        <th>WINNING NUMBERS</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>@benmalcom</td>
+                                        <td>+2348056561179</td>
+                                        <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@benjaminikeji</td>
+                                        <td>+2348056561179</td>
+                                        <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@benmalcom</td>
+                                        <td>+2348056561179</td>
+                                        <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@benjaminikeji</td>
+                                        <td>+2348056561179</td>
+                                        <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@benmalcom</td>
+                                        <td>+2348056561179</td>
+                                        <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@benjaminikeji</td>
+                                        <td>+2348056561179</td>
+                                        <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                    </tr>
+                                    <tr>
+                                        <td>@benmalcom</td>
+                                        <td>+2348056561179</td>
+                                        <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                    </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row winning-info mt-30">
+                    <div class="col-md-12 col-12 table-container p-20">
+                        <h6 class="mt-20 text-white">Winners</h6>
+                        <div class="form-inline filter-form container-fluid mt-20 mb-30">
+                            <div class="row">
+                                <div class="form-group">
+                                    <select class="selectpicker">
+                                        <option>Mega Bingo</option>
+                                        <option>Pick 4</option>
+                                        <option>Pick 3</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="selectpicker">
+                                        <option>03/02/2018</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <select class="selectpicker">
+                                        <option>7PM</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-forecast btn-lg bootstrap-select">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-winners table-winners-big">
+                                <thead>
+                                <tr>
+                                    <th>USERNAME</th>
+                                    <th>PHONE NUMBER</th>
+                                    <th>WINNING NUMBERS</th>
+                                    <th>WINNING NUMBERS</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                    <td>0 - 0 - 0 - 0 - 0 - 0</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$('.selectpicker').selectpicker({
+            size: 4
+        });
+	});
+	$(document).ready(function () {
+		$('[data-toggle=offcanvas]').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+		$('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+	});
+</script>
+</body>
+</html>

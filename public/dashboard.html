@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/global.css" media="screen">
+    <link rel="stylesheet" href="lib/bootstrap-select/dist/css/bootstrap-select.min.css" media="screen">
+    <link rel="stylesheet" href="css/dashboard.css" media="screen">
+    <title>Dashboard</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar sidebar-offcanvas p-0 m-0">
+            <!--<button type="button" class="m-1 d-block d-sm-none menu-close" data-toggle="offcanvas">
+                <i class="fa fa-times"></i>
+            </button>-->
+            <div class="logo-area center-content">
+                <div>
+                    <img src="img/bingo-dashboard-logo.png">
+                </div>
+            </div>
+            <div class="profile-area shadow m-0 center-content">
+                <div class="row">
+                    <div class="col-md-4 col-4">
+                        <img src="img/user%20avatar.png" class="pp-border circle circle-xs">
+                    </div>
+                    <div class="col-md-8 col-8">
+                        <div class="text-left">
+                            <h6 class="text-sm mt-10 user-name text-white">Benjamin Ikeji</h6>
+                            <h6 class="text-sm text-muted"><a href="#" class="view-profile">VIEW PROFILE</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-links-area">
+                <ul class="mt-15 p-0">
+                    <li class="active"><a href="dashboard.html"><img src="img/icons/svg/dashboard.svg" class="sidebar-icon mr-3"> Dashboard</a></li>
+                    <li><a href="players.html"><img src="img/icons/svg/players.svg" class="sidebar-icon mr-3"> Players</a></li>
+                    <li><a href="games.html"><img src="img/icons/svg/slot-machine.svg" class="sidebar-icon mr-3"> Games</a></li>
+                    <li><a href="reports.html"><img src="img/icons/svg/newspaper.svg" class="sidebar-icon mr-3"> Reports</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9 col-lg-10 p-0 content-parent">
+            <nav class="navbar shadow dashboard-navbar">
+                <a class="navbar-brand d-none d-sm-block text-white ml-20" href="#">
+                    Dashboard
+                </a>
+
+                <!--                <button class="navbar-toggler text-black" type="button" data-toggle="collapse"
+                                        data-target="#navbarSupportedContent"
+                                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="fa fa-bars"></span>
+                                </button>-->
+
+                <div class="btn-group dropdown align-items-center justify-content-between">
+                    <a class="d-inline d-sm-none hamburger-menu home-menu" data-toggle="offcanvas">
+                        <span class="fa fa-bars menu-icon"></span>
+                    </a>
+                </div>
+                <a>
+                    <img src="images/user%20avatar.png" class="circle circle-xs pp-border shadow d-block d-sm-none">
+                </a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                </div>
+            </nav>
+            <div class="content p-20 pl-50 pr-50">
+                <div class="row stats">
+                    <div class="col-md-4 col-12 stat-item-parent full-height">
+                        <div class="col-md-12 stat-item info full-height center-content">
+                                <div class="text-center mt-2">
+                                    <h1 class="money-info">N1.32m</h1>
+                                    <h6 class="desc-info text-md">Total Wins</h6>
+                                </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-4 col-12 stat-item-parent">
+                        <div class="col-md-12 stat-item success full-height center-content">
+                            <div class="text-center mt-2">
+                                <h1 class="money-info">N73.6m</h1>
+                                <h6 class="desc-info text-md">Total Income</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 stat-item-parent">
+                        <div class="col-md-12 stat-item danger full-height center-content">
+                            <div class="text-center mt-2">
+                                <h1 class="money-info">N623,000</h1>
+                                <h6 class="desc-info text-md">Total Withdraws</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row after-stats mt-50 shadow">
+                    <div class="col-md-3 col-12 after-stats-sidebar full-height p-0">
+                        <div class="sidebar-top p-20">
+                            <p class="text-sm text-white mb-0">Winners</p>
+                            <h5 class="text-white text-md mt-0"><strong>Select Game</strong></h5>
+                            <div class="form-inline filter-form">
+                                <div class="row">
+                                    <div class="form-group ml-0 col-md-6">
+                                        <select class="selectpicker">
+                                            <option>03/02/2018</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <button type="submit" class="btn btn-forecast b-r-0 btn-lg bootstrap-select">Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sidebar-bottom">
+                            <div class="side-action info active">
+                                <p class="text-sm text-center"><i class="fa fa-arrow-right"></i> Mega Bingo Draw</p>
+                            </div>
+                            <div class="side-action warning">
+                                <p class="text-sm text-center"><i class="fa fa-arrow-right"></i> Bingo Draw</p>
+                            </div>
+                            <div class="side-action success">
+                                <p class="text-sm text-center"><i class="fa fa-arrow-right"></i> Pick 3 Draw</p>
+                            </div>
+                            <div class="side-action danger">
+                                <p class="text-sm text-center"><i class="fa fa-arrow-right"></i> Pick 4 Draw</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-12 table-container p-0">
+                        <div class="shadow table-responsive">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>USERNAME</th>
+                                    <th>EMAIL ADDRESS</th>
+                                    <th>PHONE NUMBER</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+                                <tr>
+                                    <td>benmalcom</td>
+                                    <td>jetski@popomail.com</td>
+                                    <td>+2348056561179</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/popper.js/dist/umd/popper.min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.selectpicker').selectpicker();
+    });
+	$(document).ready(function () {
+		$('[data-toggle=offcanvas]').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+		$('.row-offcanvas > .sidebar-offcanvas > ul  a').click(function () {
+			$('.row-offcanvas').toggleClass('active');
+		});
+	});
+</script>
+</body>
+</html>
